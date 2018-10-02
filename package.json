@@ -1,0 +1,35 @@
+{
+  "name": "@absolunet/nwayo-extension-styleguide",
+  "version": "0.0.1",
+  "description": "Styleguide generation for nwayo",
+  "definition": "",
+  "homepage": "https://github.com/absolunet/nwayo-extension-styleguide",
+  "author": {
+    "name": "Absolunet",
+    "url": "https://absolunet.com"
+  },
+  "keywords": [
+    "nwayo",
+    "nwayo-extension",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "repository": {
+    "url": "git://github.com/absolunet/nwayo-extension-styleguide.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/absolunet/nwayo-extension-styleguide/issues"
+  },
+  "engines": {
+    "node": ">= 10.11.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "@absolunet/tester": "2.1.1"
+  },
+  "dependencies": {}
+}
