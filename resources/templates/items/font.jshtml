@@ -1,0 +1,9 @@
+<div class="nwayoext-styleguide-cell by3">
+	<h2 style="font-family:{{:~family}}; font-weight:{{:~weight || 'normal'}}; font-style:{{:~style || 'normal'}};">{{:~name}}</h2>
+	<p style="font-family:{{:~family}}; font-weight:{{:~weight || 'normal'}}; font-style:{{:~style || 'normal'}};">
+		ABCDEFGHIJKLMNOP<br>
+		abcdefghijklmnop<br>
+		12345678910<br>
+		!@#$%?&*()_+
+	</p>
+</div>

@@ -1,0 +1,3 @@
+<div class="{{if border}}nwayoext-styleguide-row{{/if}} {{if style}}nwayoext-styleguide-on{{:style}}{{/if}} {{:class}}">
+	{{:content}}
+</div>

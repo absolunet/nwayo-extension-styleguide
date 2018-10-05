@@ -1,0 +1,128 @@
+body {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	background-color: #f4f5f8;
+	font-size: 16px;
+	font-family: Helvetica,	Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+
+a { color: #95a5a6; text-decoration: none; }
+a:hover { color: #566c70; }
+
+/*
+ * LAYOUT
+ */
+
+html, body, .nwayoext-styleguide-wrapper {
+	overflow:hidden;
+	width:100%;
+	height:100%;
+}
+
+.nwayoext-styleguide-content,
+.nwayoext-styleguide-sidebar {
+	height:100%;
+}
+
+.nwayoext-styleguide-wrapper::after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.nwayoext-styleguide-sidebar {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 0;
+	transition: width 0.3s ease;
+	white-space: nowrap;
+}
+
+.nwayoext-styleguide-content {
+	float: right;
+	width: 100%;
+}
+
+/* OPEN/CLOSE ANIMATION */
+#nwayoext-styleguide-sidebar:target {
+	width: 200px;
+}
+
+#nwayoext-styleguide-sidebar:target + .nwayoext-styleguide-content {
+	width: calc(100% - 200px);
+}
+
+#nwayoext-styleguide-sidebar:target + .nwayoext-styleguide-content > .nwayoext-styleguide-navopen{
+	font-size: 0;
+	cursor: auto;
+}
+
+
+/*
+ * CONTENT
+ */
+
+.nwayoext-styleguide-navopen,
+.nwayoext-styleguide-navclose {
+	display: block;
+    padding: .5em;
+	width: 100%;
+	height: 32px;
+    font-size: .8em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eceef3;
+}
+
+/* SIDEBAR */
+.nwayoext-styleguide-sidebar {
+	background-color: #f4f5f8;
+}
+
+.nwayoext-styleguide-sidebar .project-logo {
+	background-color: #eceef3;
+	text-align: center;
+}
+
+.nwayoext-styleguide-sidebar ul {
+	margin: 0;
+	padding: 1em 0;
+	text-align: center;
+	list-style: none;
+}
+
+.nwayoext-styleguide-sidebar ul::after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.nwayoext-styleguide-sidebar ul li a {
+	float: left;
+	padding: 0.3em;
+	width: 100%;
+}
+
+.nwayoext-styleguide-navclose {
+    text-align: right;
+}
+
+/* CONTENT */
+.nwayoext-styleguide-content {
+	background: #ffffff;
+}
+
+.nwayoext-styleguide-content iframe {
+	width: 100%;
+	height: calc(100% - 32px);
+	border: 0;
+}

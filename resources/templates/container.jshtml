@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-CA" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>Styleguide for {{:projectName}}</title>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="NOINDEX,NOFOLLOW"/>
+
+	<link rel="shortcut icon"    href="{{:iconsUrl}}/favicon.ico">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-57.png">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-72.png"  sizes="72x72">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-76.png"  sizes="76x76">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-114.png" sizes="114x114">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-167.png" sizes="167x167">
+	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-180.png" sizes="180x180">
+	<link rel="image_src"        href="{{:iconsUrl}}/touch-512.png">
+	<link rel="icon"             href="{{:iconsUrl}}/icon-64.png"  sizes="64x64">
+	<link rel="icon"             href="{{:iconsUrl}}/icon-96.png"  sizes="96x96">
+	<link rel="icon"             href="{{:iconsUrl}}/icon-192.png" sizes="192x192">
+	<link rel="icon"             href="{{:iconsUrl}}/icon-195.png" sizes="195x195">
+	<link rel="icon"             href="{{:iconsUrl}}/icon-196.png" sizes="196x196">
+	<link rel="icon"             href="{{:iconsUrl}}/icon-228.png" sizes="228x228">
+
+	<meta name="application-name"                content="{{:projectName}}">
+	<meta name="msapplication-square70x70logo"   content="{{:iconsUrl}}/tile-small.png">
+	<meta name="msapplication-square150x150logo" content="{{:iconsUrl}}/tile-medium.png">
+	<meta name="msapplication-wide310x150logo"   content="{{:iconsUrl}}/tile-wide.png">
+	<meta name="msapplication-square310x310logo" content="{{:iconsUrl}}/tile-large.png">
+
+	<link rel="stylesheet" type="text/css"  media="all" href="static/container.css" />
+</head>
+<body>
+	<div class="nwayoext-styleguide-wrapper">
+		<nav id="nwayoext-styleguide-sidebar" class="nwayoext-styleguide-sidebar">
+			<div class="project-logo">
+				<a class="nwayoext-styleguide-navclose" href="#">Close menu</a>
+				<img src="{{:iconsUrl}}/touch-152.png" alt="logo">
+			</div>
+			<ul class="collection lists">
+			{{for sections}}
+				<li><a href="section-{{:component}}.html" target="styleguide-iframe">{{:name}}</a></li>
+			{{/for}}
+			</ul>
+		</nav>
+		<main class="nwayoext-styleguide-content">
+			<a class="nwayoext-styleguide-navopen" href="#nwayoext-styleguide-sidebar">Open menu</a>
+			<iframe id="nwayoext-styleguide-iframe" name="styleguide-iframe" src="section-{{:sections[0].component}}.html"></iframe>
+		</main>
+	</div>
+</body>
+</html>

@@ -18,7 +18,7 @@ $ npm install @absolunet/nwayo-extension-styleguide
 ## Usage
 
 In your project's `nwayo.yaml`
-```yaml
+```
 extensions:
 
 	'@absolunet/styleguide':

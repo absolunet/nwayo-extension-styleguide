@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-CA" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>Styleguide for {{:projectName}} - {{:sectionName}}</title>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="NOINDEX,NOFOLLOW"/>
+
+	<link rel="stylesheet" type="text/css" media="all" href="static/section.css" />
+{{for styles}}
+	<link rel="stylesheet" type="text/css" media="all" href="{{:#data}}" />
+{{/for}}
+
+{{for scripts}}
+	<script type="text/javascript" defer src="{{:#data}}"></script>
+{{/for}}
+
+</head>
+<body>
+
+	{{:content}}
+
+</body>
+</html>
