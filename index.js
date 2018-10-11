@@ -3,6 +3,7 @@
 //--------------------------------------------------------
 'use strict';
 
+const fss   = require('@absolunet/fss');
 const nwayo = require('@absolunet/nwayo-workflow');
 
 const NwayoExtension = nwayo.classes.extension;
@@ -13,6 +14,13 @@ class NwayoStyleguideExtension extends NwayoExtension {
 
 	get id() {
 		return 'styleguide';
+	}
+
+
+	get version() {
+		const pkg = fss.readJson(`${__dirname}/package.json`);
+
+		return pkg.version;
 	}
 
 

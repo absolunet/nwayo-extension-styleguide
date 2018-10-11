@@ -44,7 +44,7 @@ module.exports = (extension) => {
 				// Copy static assets
 				const outputStatic = `${options.output}/static`;
 				fss.copy(STATIC_PATH, outputStatic);
-				log(id, 'static copied');
+
 
 				// Gather collections
 				const scripts = options['scripts-collections'].map((collection) => {
@@ -54,6 +54,7 @@ module.exports = (extension) => {
 				const styles = options['styles-collections'].map((collection) => {
 					return util.getStylesUrl(options.bundle, collection);
 				});
+
 
 				// Write sections
 				options.sections.forEach(({ name, component }) => {
@@ -75,6 +76,10 @@ module.exports = (extension) => {
 					sections:    options.sections
 				}));
 				log(id, 'index.html built');
+
+
+				// Write readme.md
+				fss.outputFile(`${options.output}/readme.md`, `# ${util.getGeneratedBanner(id, 'text', extension)}\n`);
 
 				cb();
 			});
