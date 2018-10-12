@@ -79,7 +79,7 @@ module.exports = (extension) => {
 
 
 				// Write readme.md
-				fss.outputFile(`${options.output}/readme.md`, `# ${util.getGeneratedBanner(id, 'text', extension)}\n`);
+				fss.outputFile(`${options.output}/readme.md`, `# ${extension.getGeneratedBanner(id, 'text')}\n`);
 
 				cb();
 			});

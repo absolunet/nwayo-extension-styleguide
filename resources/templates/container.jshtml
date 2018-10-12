@@ -7,7 +7,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta http-equiv="cleartype" content="on">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="robots" content="NOINDEX,NOFOLLOW"/>
+	<meta name="robots" content="NOINDEX,NOFOLLOW">
 
 	<link rel="shortcut icon"    href="{{:iconsUrl}}/favicon.ico">
 	<link rel="apple-touch-icon" href="{{:iconsUrl}}/touch-57.png">
@@ -33,7 +33,7 @@
 	<meta name="msapplication-wide310x150logo"   content="{{:iconsUrl}}/tile-wide.png">
 	<meta name="msapplication-square310x310logo" content="{{:iconsUrl}}/tile-large.png">
 
-	<link rel="stylesheet" type="text/css"  media="all" href="static/container.css" />
+	<link rel="stylesheet" type="text/css"  media="all" href="static/container.css">
 </head>
 <body>
 	<div class="nwayoext-styleguide-wrapper">
