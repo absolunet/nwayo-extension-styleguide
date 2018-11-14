@@ -3,6 +3,7 @@
 //--------------------------------------------------------
 'use strict';
 
+const get      = require('lodash.get');
 const path     = require('path');
 const fss      = require('@absolunet/fss');
 const nwayo    = require('@absolunet/nwayo-workflow');
@@ -55,6 +56,9 @@ module.exports = (extension) => {
 					return util.getStylesUrl(options.bundle, collection);
 				});
 
+				// Get konstan
+				const konstan = util.getKonstan(options.bundle);
+
 
 				// Write sections
 				options.sections.forEach(({ name, component }) => {
@@ -63,7 +67,9 @@ module.exports = (extension) => {
 						sectionName: name,
 						scripts:     scripts,
 						styles:      styles,
-						content:     template.getComponentTemplate(component).render()
+						content:     template.getComponentTemplate(component).render({}, {
+							konstan: (key) => { return get(konstan, key); }
+						})
 					}));
 					log(id, `section-${component}.html built`);
 				});

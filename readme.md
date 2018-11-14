@@ -67,21 +67,21 @@ extensions:
 
 	{{sgSubsubtitle}}Brands{{/sgSubsubtitle}}
 	{{sgBox ~border=true}}
-		{{include tmpl="color" ~hex="#cc0000" ~name="brand-red" /}}
-		{{include tmpl="color" ~hex="#00cc00" ~name="brand-green" /}}
+		{{include tmpl="color" ~hex=~konstan('color.brand.red')   ~name="Red" /}}
+		{{include tmpl="color" ~hex=~konstan('color.brand.green') ~name="Green" /}}
 	{{/sgBox}}
 
 	{{sgSubsubtitle}}Texts, borders and backgrounds{{/sgSubsubtitle}}
 	{{sgBox ~border=true}}
-		{{include tmpl="color" ~hex="#36454f" ~name="charcoal" /}}
+		{{include tmpl="color" ~hex=~konstan('color.charcoal') ~name="Charcoal" /}}
 	{{/sgBox}}
 
 
 	{{sgSubtitle}}Fonts{{/sgSubtitle}}
 	{{sgBox ~border=true}}
-		{{include tmpl="font" ~name="Roboto Regular" ~family="Roboto" ~weight="400" /}}
-		{{include tmpl="font" ~name="Roboto Black"   ~family="Roboto" ~weight="900" /}}
-		{{include tmpl="font" ~name="Mali Regular"   ~family="Mali"   ~weight="400" /}}
+		{{include tmpl="font" ~name="Roboto Regular" ~family="~konstan('font.base')" ~weight="400" /}}
+		{{include tmpl="font" ~name="Roboto Black"   ~family="~konstan('font.base')" ~weight="900" /}}
+		{{include tmpl="font" ~name="Mali Regular"   ~family="~konstan('font.alt')"  ~weight="400" /}}
 	{{/sgBox}}
 
 
@@ -255,6 +255,22 @@ Font item
 ```handlebars
 {{include tmpl="font" ~name="Roboto Black Italic" ~family="Roboto" ~weight="900" ~style="italic" /}}
 ```
+
+
+
+## JsRender helpers
+
+### ~konstan(key)
+Get item from konstan
+
+#### key
+`String` Dot-notation key
+
+```handlebars
+{{include tmpl="color" ~hex=~konstan('color.brand.red') ~name="Red" /}}
+```
+
+
 
 
 

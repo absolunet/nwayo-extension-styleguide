@@ -16,9 +16,9 @@ body {
 a { color: #95a5a6; text-decoration: none; }
 a:hover { color: #566c70; }
 
-/*
- * LAYOUT
- */
+/* ------------- */
+/*  LAYOUT       */
+/* ------------- */
 
 html, body, .nwayoext-styleguide-wrapper {
 	overflow:hidden;
@@ -68,19 +68,19 @@ html, body, .nwayoext-styleguide-wrapper {
 }
 
 
-/*
- * CONTENT
- */
+/* ------------- */
+/*  CONTENT      */
+/* ------------- */
 
 .nwayoext-styleguide-navopen,
 .nwayoext-styleguide-navclose {
 	display: block;
-    padding: .5em;
+	padding: .5em;
 	width: 100%;
 	height: 32px;
-    font-size: .8em;
-    text-transform: uppercase;
-    border-bottom: 1px solid #eceef3;
+	font-size: .8em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #eceef3;
 }
 
 /* SIDEBAR */
@@ -113,7 +113,7 @@ html, body, .nwayoext-styleguide-wrapper {
 }
 
 .nwayoext-styleguide-navclose {
-    text-align: right;
+	text-align: right;
 }
 
 /* CONTENT */

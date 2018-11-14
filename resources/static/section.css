@@ -2,9 +2,9 @@ body > section {
 	padding: 40px 2em 0;
 }
 
-/*
- * GRID
- */
+/* ------------- */
+/*  GRID         */
+/* ------------- */
 
 .nwayoext-styleguide-row::after {
 	display: table;
@@ -30,18 +30,18 @@ body > section {
 	}
 }
 
-/*
- * REVERSE
- */
+/* ------------- */
+/*  REVERSE      */
+/* ------------- */
 
 .nwayoext-styleguide-ondark {
 	padding: .5rem;
 	background-color: #333333;
 }
 
-/*
- * TEXTS
- */
+/* ------------- */
+/*  TEXTS        */
+/* ------------- */
 
 .nwayoext-styleguide-intro > h1 {
 	margin: 0;
@@ -80,9 +80,9 @@ body > section {
 	border: 2px solid #dddddd;
 }
 
-/*
- * SWATCHES
- */
+/* ------------- */
+/*  SWATCHES     */
+/* ------------- */
 
 .nwayoext-styleguide-palette-item > span {
 	display: block;
