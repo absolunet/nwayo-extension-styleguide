@@ -38,14 +38,13 @@ html, body, .nwayoext-styleguide-wrapper {
 }
 
 .nwayoext-styleguide-sidebar {
-	overflow: hidden;
+	overflow-x: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
 	float: left;
 	width: 0;
 	transition: width 0.3s ease;
-	white-space: nowrap;
 }
 
 .nwayoext-styleguide-content {
