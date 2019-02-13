@@ -99,7 +99,7 @@ body > section {
 	border: 2px solid #dddddd;
 }
 
-.nwayoext-styleguide-content.no-border > div {
+.nwayoext-styleguide-content > div.no-border {
 	border: 0;
 }
 

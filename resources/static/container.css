@@ -105,8 +105,16 @@ html, body, .nwayoext-styleguide-wrapper {
 	content: '';
 }
 
+.nwayoext-styleguide-sidebar ul li {
+	display: block;
+	margin: 0.3em;
+}
+
+.nwayoext-styleguide-sidebar ul li.divider {
+	border-bottom: 2px solid #eceef3;
+}
+
 .nwayoext-styleguide-sidebar ul li a {
-	float: left;
 	padding: 0.3em;
 	width: 100%;
 }
