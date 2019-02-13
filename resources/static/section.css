@@ -82,12 +82,16 @@ body > section {
 	font-weight: bold;
 }
 
-.nwayoext-styleguide-content:not(.nwayoext-styleguide-noborder) > div {
+.nwayoext-styleguide-content > div {
 	position: relative;
 	margin: 0 0 1rem;
 	max-width: 100%;
 	padding: 2rem;
 	border: 2px solid #dddddd;
+}
+
+.nwayoext-styleguide-content.no-border > div {
+	border: 0;
 }
 
 /* ------------- */
