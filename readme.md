@@ -203,7 +203,7 @@ Content box
 Content box cell
 
 #### ~nb
-`Number` Number of cell per row
+`Number` Number of cell per row (2 to 6)
 
 ```handlebars
 {{sgBox}}
@@ -236,7 +236,6 @@ Color palette item
 
 
 
-
 ### font
 Font item
 
@@ -258,6 +257,7 @@ Font item
 
 
 
+
 ## JsRender helpers
 
 ### ~konstan(key)
@@ -269,8 +269,6 @@ Get item from konstan
 ```handlebars
 {{include tmpl="color" ~hex=~konstan('color.brand.red') ~name="Red" /}}
 ```
-
-
 
 
 

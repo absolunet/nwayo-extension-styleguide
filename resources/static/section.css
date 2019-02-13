@@ -28,6 +28,12 @@ body > section {
 	.nwayoext-styleguide-cell.by4 {
 		width: 25%;
 	}
+	.nwayoext-styleguide-cell.by5 {
+		width: 20%;
+	}
+	.nwayoext-styleguide-cell.by6 {
+		width: 16.66%;
+	}
 }
 
 /* ------------- */
