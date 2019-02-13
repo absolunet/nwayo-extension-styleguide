@@ -18,6 +18,10 @@ body > section {
 	width: 100%;
 }
 
+.nwayoext-styleguide-cell.with-spacing {
+	padding-right: .5rem;
+}
+
 @media screen and (min-width: 900px) {
 	.nwayoext-styleguide-cell.by2 {
 		width: 50%;

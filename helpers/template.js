@@ -100,6 +100,7 @@ class Template {
 			sgCell: function() {
 				return __.tmplTags.cell.render({
 					content: this.tagCtx.render(),
+					spacing: this.tagCtx.ctx.spacing,
 					nb:      this.tagCtx.ctx.nb
 				});
 			},
