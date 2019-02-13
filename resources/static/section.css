@@ -12,6 +12,18 @@ body > section {
 	content: '';
 }
 
+.nwayoext-styleguide-row {
+	position: relative !important;
+	margin: 0 0 1rem;
+	max-width: 100%;
+	padding: 2rem;
+	border: 2px solid #dddddd;
+}
+
+.nwayoext-styleguide-row.no-border {
+	border: 0;
+}
+
 .nwayoext-styleguide-cell {
 	float: left;
 	padding-bottom: 1rem;
@@ -89,18 +101,6 @@ body > section {
 	font-size: 1.2rem;
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 	font-weight: bold;
-}
-
-.nwayoext-styleguide-content > div {
-	position: relative;
-	margin: 0 0 1rem;
-	max-width: 100%;
-	padding: 2rem;
-	border: 2px solid #dddddd;
-}
-
-.nwayoext-styleguide-content > div.no-border {
-	border: 0;
 }
 
 /* ------------- */
