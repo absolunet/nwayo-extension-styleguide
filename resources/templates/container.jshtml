@@ -44,6 +44,7 @@
 			</div>
 			<ul class="collection lists">
 			{{for sections}}
+				{{if divider}}<li class="divider"></li>{{/if}}
 				<li><a href="section-{{:component}}.html" target="styleguide-iframe">{{:name}}</a></li>
 			{{/for}}
 			</ul>

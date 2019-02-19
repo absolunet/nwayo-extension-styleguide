@@ -87,12 +87,12 @@ extensions:
 
 	{{sgSubtitle}}Typography{{/sgSubtitle}}
 	{{sgBox ~class="page-main"}}
-		{{sgCell ~nb="2"}}
+		{{sgCell ~nb="2" ~spacing=true}}
 			<h1>&lt;h1&gt; Title</h1>
 			<h2>&lt;h2&gt; Title</h2>
 			<h3>&lt;h3&gt; Title</h3>
 		{{/sgCell}}
-		{{sgCell ~nb="2"}}
+		{{sgCell ~nb="2" ~spacing=true}}
 			<h4>&lt;h4&gt; Title</h4>
 			<h5>&lt;h5&gt; Title</h5>
 			<h6>&lt;h6&gt; Title</h6>
@@ -202,8 +202,11 @@ Content box
 ### {{sgCell}}
 Content box cell
 
+#### ~spacing *(Optional)*
+`Boolean` If the box should have gutter spacing
+
 #### ~nb
-`Number` Number of cell per row
+`Number` Number of cell per row (2 to 6)
 
 ```handlebars
 {{sgBox}}
@@ -236,7 +239,6 @@ Color palette item
 
 
 
-
 ### font
 Font item
 
@@ -258,6 +260,7 @@ Font item
 
 
 
+
 ## JsRender helpers
 
 ### ~konstan(key)
@@ -269,8 +272,6 @@ Get item from konstan
 ```handlebars
 {{include tmpl="color" ~hex=~konstan('color.brand.red') ~name="Red" /}}
 ```
-
-
 
 
 
