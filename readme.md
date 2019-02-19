@@ -46,6 +46,7 @@ extensions:
             component: site
           - name: Home widgets
             component: widget
+            divider: true
       blog:                            # Second styleguide [...]
         name: My wonderful blog
         # [...]

@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/nwayo-extension-styleguide",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Styleguide generation for nwayo",
   "definition": "",
   "homepage": "https://github.com/absolunet/nwayo-extension-styleguide",
@@ -22,18 +22,18 @@
     "url": "https://github.com/absolunet/nwayo-extension-styleguide/issues"
   },
   "engines": {
-    "node": ">= 11.3.0"
+    "node": ">= 11.10.0"
   },
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava test"
   },
   "devDependencies": {
-    "@absolunet/tester": "2.4.3"
+    "@absolunet/tester": "2.5.0"
   },
   "dependencies": {
-    "@absolunet/fss": "^1.3.3",
-    "jsrender": "^1.0.0",
+    "@absolunet/fss": "^1.4.0",
+    "jsrender": "^1.0.2",
     "lodash.get": "4.4.2"
   }
 }
