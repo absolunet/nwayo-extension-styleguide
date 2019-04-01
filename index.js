@@ -18,9 +18,9 @@ class NwayoStyleguideExtension extends NwayoExtension {
 
 
 	get version() {
-		const pkg = fss.readJson(`${__dirname}/package.json`);
+		const config = fss.readJson(`${__dirname}/package.json`);
 
-		return pkg.version;
+		return config.version;
 	}
 
 

@@ -21,8 +21,8 @@ const STATIC_PATH = `${ROOT}/resources/static`;
 
 
 module.exports = (extension) => {
-	const log = (id, msg) => {
-		extension.log(TASK, `${id} - ${msg}`);
+	const log = (id, message) => {
+		extension.log(TASK, `${id} - ${message}`);
 	};
 
 	template.init({
@@ -32,14 +32,14 @@ module.exports = (extension) => {
 
 
 	extension.createTask(TASK, () => {
-		return toolbox.fakeStream((cb) => {
+		return toolbox.fakeStream((callback) => {
 
 			// Foreach styleguide
 			Object.keys(extension.options).forEach((id) => {
 				const options = extension.options[id];
 
 				// Cleanup
-				fss.remove(options.output);
+				fss.removePattern(`${options.output}/*`);
 				fss.ensureDir(options.output);
 
 				// Copy static assets
@@ -87,7 +87,7 @@ module.exports = (extension) => {
 				// Write readme.md
 				fss.outputFile(`${options.output}/readme.md`, `# ${extension.getGeneratedBanner(id, 'text')}\n`);
 
-				cb();
+				callback();
 			});
 		});
 	});
