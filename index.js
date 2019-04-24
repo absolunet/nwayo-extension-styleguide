@@ -26,7 +26,7 @@ class NwayoStyleguideExtension extends NwayoExtension {
 
 	init({ options }) {
 		Object.keys(options).forEach((name) => {
-			options[name].output = `${paths.dir.root}/${options[name].output}`;
+			options[name].output = `${paths.directory.root}/${options[name].output}`;
 		});
 
 		this.options = options;

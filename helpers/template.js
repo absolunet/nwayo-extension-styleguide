@@ -31,7 +31,7 @@ class Template {
 
 	getComponentTemplate(component) {
 		if (!__.tmplComponents[component]) {
-			__.tmplComponents[component] = jsrender.templates(fss.readFile(`${__.extension.getComponentDir(component)}/${__.extension.id}.jshtml`, 'utf8'));
+			__.tmplComponents[component] = jsrender.templates(fss.readFile(`${__.extension.getComponentDirectory(component)}/${__.extension.id}.jshtml`, 'utf8'));
 		}
 
 		return __.tmplComponents[component];
