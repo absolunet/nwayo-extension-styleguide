@@ -22,21 +22,26 @@
     "url": "https://github.com/absolunet/nwayo-extension-styleguide/issues"
   },
   "engines": {
-    "node": ">= 11.14.0"
+    "node": ">= 12.6.0"
   },
   "main": "index.js",
   "scripts": {
-    "test": "ava test"
+    "test": "ava test",
+    "installer": "node manager.js --task=installer",
+    "outdated": "node manager.js --task=outdated",
+    "build": "node manager.js --task=build",
+    "deploy": "node manager.js --task=deploy"
   },
   "devDependencies": {
-    "@absolunet/tester": "2.6.3"
+    "@absolunet/manager": "1.1.0",
+    "@absolunet/tester": "2.6.8"
   },
   "peerDependencies": {
-    "@absolunet/nwayo-workflow": "^3.6.3"
+    "@absolunet/nwayo-workflow": "^3.7.0"
   },
   "dependencies": {
-    "@absolunet/fss": "^1.6.0",
-    "jsrender": "^1.0.2",
+    "@absolunet/fss": "^1.6.1",
+    "jsrender": "^1.0.3",
     "lodash.get": "^4.4.2"
   }
 }
