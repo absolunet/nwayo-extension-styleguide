@@ -141,6 +141,15 @@ Whole styleguide content wrapper
 {{/sgContent}}
 ```
 
+#### ~class *(Optional)*
+`String` Additional custom class
+
+```handlebars
+{{sgContent ~class="special-theme"}}
+	Everything except the intro goes here
+{{/sgContent}}
+```
+
 
 
 ### {{sgTitle}}
