@@ -114,7 +114,8 @@ class Template {
 
 			sgContent: function() {
 				return __.tmplTags.content.render({
-					content: this.tagCtx.render()
+					content: this.tagCtx.render(),
+					class:   this.tagCtx.ctx.class
 				});
 			}
 		});

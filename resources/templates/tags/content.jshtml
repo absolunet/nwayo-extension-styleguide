@@ -1,3 +1,3 @@
-<section class="nwayoext-styleguide-content">
+<section class="nwayoext-styleguide-content {{:class}}">
 	{{:content}}
 </section>
